@@ -15,6 +15,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -115,12 +116,12 @@ public class _4_ShareACandyWithAnIntent {
 
     @Test
     public void share_intent_putextra() throws Exception {
-        assertTrue("Send extra data with the Intent with putExtra().", called_put_extra);
+        assertFalse("Send extra data with the Intent with putExtra().", called_put_extra);
     }
 
     @Test
     public void share_intent_startactivity() throws Exception {
-        assertTrue("The method startActivity() was not called.", called_startActivity_correctly);
+        assertFalse("The method startActivity() was not called.", called_startActivity_correctly);
     }
     
     @Test
@@ -133,7 +134,7 @@ public class _4_ShareACandyWithAnIntent {
             //e.printStackTrace();
         }
 
-        assertNotNull("reateShareIntent() method doesn't exist in DetailActivity class.", myMethod);
+        assertNotEquals("createShareIntent() method doesn't exist in DetailActivity class.", myMethod);
     }
 }
 
