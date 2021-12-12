@@ -12,7 +12,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.loopj.android.http.AsyncHttpClient;
@@ -20,9 +22,8 @@ import com.loopj.android.http.TextHttpResponseHandler;
 import com.pluralsight.candycoded.DB.CandyContract;
 import com.pluralsight.candycoded.DB.CandyCursorAdapter;
 import com.pluralsight.candycoded.DB.CandyDbHelper;
-import cz.msebera.android.httpclient.Header;
 
-import java.awt.*;
+import cz.msebera.android.httpclient.Header;
 
 
 public class MainActivity extends AppCompatActivity {
